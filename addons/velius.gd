@@ -6,6 +6,7 @@
 # To acces it when developing a theme, please use the official Velius-Engine SDK.
 # To access it when developing a mystery, you can use `Velius.<PROPERTY/METHOD>` in your scripts.
 extends Node
+
 ###############################################################################
 #                                  VELIUS ENGINE                              #
 ###############################################################################
@@ -70,7 +71,6 @@ func get_action(id : int) -> String:
 # After loading the given chapter will get displayed
 func start_chapter(json_path : String, chapterID : int) -> void:
 	pass
-
 
 # Runs a dialogue with the given data
 # Replaces all '@'-variables with their string value
