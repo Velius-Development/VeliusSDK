@@ -57,7 +57,7 @@ func _notification(what) -> void:
 # Returns Dictionary containing
 # the dialogue's data
 # If id not found: returns empty Dictionary
-func get_dialogue_by_id(id : int) -> Dictionary:
+func get_dialogue_by_id(id : int, chapter_id = current_chapter_id) -> Dictionary:
 	return {}
 
 # Returns a choice's action string
@@ -69,7 +69,7 @@ func get_action(id : int) -> String:
 
 # Loads a Mystery's data and theme
 # After loading the given chapter will get displayed
-func start_chapter(json_path : String, chapterID : int) -> void:
+func start_chapter(json_path : String, chapterID : int, dialogue_id = 0) -> void:
 	pass
 
 # Runs a dialogue with the given data
