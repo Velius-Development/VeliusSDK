@@ -139,13 +139,13 @@ func png_to_tex(local_res_path : String) -> ImageTexture:
 func import(path = "all", dlc = false) -> void:
 	pass
 
-# Removes a dictionary's object from a dictionary
+# Removes a dictionary's from property if equal to given value 
 # Only works on the first layer (non-recursive)
-func erase_from(dict : Dictionary, from : Dictionary) -> Dictionary:
+func erase_from(dict : Dictionary, from : String) -> Dictionary:
 	return {}
 
-# Returns the key of a object with in a dictionary that eqals the 'from' dictioanry
-func get_key_by_from(dict : Dictionary, from : Dictionary) -> String:
+# Returns the key of a object the given from value
+func get_key_by_from(dict : Dictionary, from : String) -> String:
 	return ""
 
 # Returns a given string value in its type
